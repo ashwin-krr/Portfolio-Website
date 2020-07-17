@@ -1,0 +1,347 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* body {
+  height: 100vh;
+} */
+
+/* NAVBAR */
+
+.navbar{
+  display: block;
+}
+
+.navbar-nav {
+  margin: auto;
+}
+
+.nav-item {
+  margin: auto 30px;
+  font-size: 20px;
+}
+
+.navbar-custom {
+  background-color: black;
+}
+
+/* LANDING PAGE */
+
+#Home{
+  height: 100vh;
+}
+/* ---- particles.js container ---- */
+#particles-js {
+  background-image: url(images/bg.jpg);
+  background-size: cover;
+  /* background: #83142c; */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.particles-js-canvas-el {
+  position: absolute;
+}
+
+hr {
+  height: 6px;
+  background-image: radial-gradient(closest-side,
+      hsla(0, 0%, 50%, 1.0),
+      hsla(0, 0%, 50%, 0) 100%);
+  position: relative;
+}
+
+hr:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  background-color: hsl(0, 0%, 75%);
+  height: 12px;
+  width: 12px;
+  transform: rotate(45deg);
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 4px 0;
+  border: 4px solid hsla(0, 0%, 100%, 0.35);
+  background-clip: padding-box;
+  box-shadow: -10px 10px 0 hsla(0, 0%, 100%, 0.15), 10px -10px 0 hsla(0, 0%, 100%, 0.15);
+}
+
+.Me {
+  padding: 330px 100px;
+  ;
+  text-align: center;
+  width: 70%;
+}
+
+.name {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 2.8rem;
+  color: white;
+}
+
+.role {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  color: white;
+}
+
+/* ABOUT */
+#About {
+  margin-top:55px;
+  background: #414141;
+}
+
+.photo {
+  border-radius: 50%;
+  height: 350px;
+  width: 350px;
+  display: block;
+  margin: auto;
+  padding: 60px 60px;
+  -webkit-filter: grayscale(1);
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.info {
+  width: 40%;
+  text-align: justify;
+  margin: 0 110px;
+  color: #e5e5e5;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.dark {
+  color: #979797;
+  font-family: 'Quicksand', sans-serif;
+}
+
+a:hover {
+  color: #bbbbbb;
+  text-decoration: none;
+}
+
+.fa-print {
+  margin-right: 11px;
+}
+
+.fa-file-pdf {
+  margin-left: 2px;
+  margin-right: 13px;
+}
+
+/* PROFILE */
+#Profile {
+  padding: 50px 30px;
+  background: black;
+}
+
+.row {
+  padding: 50px 0;
+  padding-bottom: 50px;
+}
+
+#Profile .row {
+  border-bottom-style: groove;
+  border-bottom-color: gray;
+}
+
+.skillsheading {
+  color: white;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 6px;
+}
+
+.skillsheading:before {
+  content: ' ';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.heading {
+  font-size: 60px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  color: #dee3e2;
+  padding-bottom: 50px;
+  letter-spacing: 6px;
+}
+
+.subheading {
+  display: inline-block;
+  vertical-align: middle;
+  border-style: groove;
+  border-color: #83142c;
+  padding: 15px;
+}
+
+.big {
+  font-size: 110px;
+  text-align: left;
+  color: #83142c;
+}
+
+.medium {
+  font-size: 72px;
+  font-weight: bold;
+  text-align: left;
+  color: #83142c;
+}
+
+.skills {
+  width: 30%;
+  float: left;
+  margin: 20px 10px;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  transition: transform .2s;
+}
+
+.skills:hover {
+  transform: scale(1.2);
+}
+
+.education {
+  text-align: center;
+  color: gray;
+  padding: 45px 0;
+}
+
+.edulogo {
+  font-size: 60px;
+  padding-bottom: 30px;
+}
+
+/* WORK */
+#Work {
+  background-color: #bbbbbb;
+}
+
+.p-2 {
+  color: #83142c;
+  font-family:
+}
+
+.btn-outline-dark {
+  color: #83142c;
+  border-color: #83142c;
+  font-size: 1.5rem;
+}
+
+.btn-outline-dark:not(:disabled):not(.disabled).active, .btn-outline-dark:hover, .btn-outline-dark:not(:disabled):not(.disabled):active, .show>.btn-outline-dark.dropdown-toggle {
+  color: #323232;
+  background-color: #83142c;
+}
+
+.mfp-title {
+  color: blue;
+  font-size: 40px;
+  padding: 20px 5px;
+}
+
+.portfolio-menu {
+  text-align: center;
+}
+
+.portfolio-menu ul li {
+  display: inline-block;
+  margin: 0;
+  list-style: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  -webkit-transition: all 05s ease;
+  -moz-transition: all 05s ease;
+  -ms-transition: all 05s ease;
+  -o-transition: all 05s ease;
+  transition: all .5s ease;
+}
+
+.portfolio-item {
+  /* width:100%; */
+}
+
+.portfolio-item .item {
+  /*width:303px;*/
+  float: left;
+  margin-bottom: 10px;
+  height: 200px;
+}
+
+.portfolio-item .item:hover {
+  background-color: white;
+}
+
+.pyimage {
+  object-fit: cover;
+}
+
+/* CONTACT */
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical
+    /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+#Contact {
+  background-color: #414141;
+  padding: 60px;
+}
+
+.contactform {
+  width: 60%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: auto;
+}
+
+.end {
+  padding: 20px;
+  text-align: center;
+  background: #445c3c;
+}
