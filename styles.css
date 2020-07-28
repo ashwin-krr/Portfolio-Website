@@ -1,16 +1,13 @@
 html {
+  background-color: #000000;
   scroll-behavior: smooth;
 }
 
-/* body {
-  height: 100vh;
-} */
-
 /* NAVBAR */
 
-.navbar{
+/* .navbar{
   display: block;
-}
+} */
 
 .navbar-nav {
   margin: auto;
@@ -22,7 +19,7 @@ html {
 }
 
 .navbar-custom {
-  background-color: black;
+  background-color: darkslategray;
 }
 
 /* LANDING PAGE */
@@ -143,7 +140,7 @@ a:hover {
 
 /* PROFILE */
 #Profile {
-  padding: 50px 30px;
+  padding: 0 30px 50px;
   background: black;
 }
 
@@ -184,21 +181,14 @@ a:hover {
 .subheading {
   display: inline-block;
   vertical-align: middle;
-  border-style: groove;
-  border-color: #83142c;
   padding: 15px;
 }
 
-.big {
-  font-size: 110px;
-  text-align: left;
-  color: #83142c;
-}
-
-.medium {
-  font-size: 72px;
-  font-weight: bold;
-  text-align: left;
+.type {
+  padding: 1vw;
+  border-style: groove;
+  border-color: #83142c;
+  font-size: 4vw;
   color: #83142c;
 }
 
@@ -226,6 +216,32 @@ a:hover {
   font-size: 60px;
   padding-bottom: 30px;
 }
+
+@media all and (max-width: 1397px){
+  .row{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  .col-lg-7, .col-lg-5{
+    max-width: 100%
+  }
+  .subheading{
+    margin-bottom: 30px;
+  }
+
+  .flex-container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about, .info, .resume{
+    margin: 20px auto;
+    text-align: center;
+    width: 65%;
+  }
+}
+
 
 /* WORK */
 #Work {
